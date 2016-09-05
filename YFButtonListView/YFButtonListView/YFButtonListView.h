@@ -1,6 +1,5 @@
 //
 //  XRButtonListView.h
-//  私人专科医生
 //
 //  Created by 柴勇峰 on 7/5/16.
 //  Copyright © 2016 Xingren. All rights reserved.
@@ -8,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XRButtonListItem : UIView
+@interface YFButtonListItem : UIView
 
 @property (nonatomic, strong) NSString *itemTitle;
 
@@ -54,9 +53,9 @@
 
 /* =============================== 类之界线 ======================================== */
 
-@protocol XRButtonListViewDelegate;
+@protocol YFButtonListViewDelegate;
 
-@interface XRButtonListView : UIView
+@interface YFButtonListView : UIView
 
 /*-------------------- item frame ---------------------------*/
 
@@ -136,16 +135,16 @@
  *
  *  @brief  设置代理 @note 在使用GCC编译器语法时 需要在括号外设置代理,否则不会有效果
  */
-@property (nonatomic, weak) id<XRButtonListViewDelegate> delegate;
+@property (nonatomic, weak) id<YFButtonListViewDelegate> delegate;
 
 @end
 
-@protocol XRButtonListViewDelegate <NSObject>
+@protocol YFButtonListViewDelegate <NSObject>
 
-- (void)buttonListView:(XRButtonListView *)buttonListView didSelectItem:(XRButtonListItem *)item;
+- (void)buttonListView:(YFButtonListView *)buttonListView didSelectItem:(YFButtonListItem *)item;
 
-- (XRButtonListItem *)buttonListView:(XRButtonListView *)buttonListView itemForIndex:(NSInteger)index;
+- (YFButtonListItem *)buttonListView:(YFButtonListView *)buttonListView itemForIndex:(NSInteger)index;
 
-- (NSInteger)numberOfItemWithButtonListView:(XRButtonListView *)buttonListView;
+- (NSInteger)numberOfItemWithButtonListView:(YFButtonListView *)buttonListView;
 
 @end

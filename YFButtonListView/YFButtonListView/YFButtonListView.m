@@ -1,12 +1,11 @@
 //
 //  XRButtonListView.m
-//  私人专科医生
 //
 //  Created by 柴勇峰 on 7/5/16.
 //  Copyright © 2016 Xingren. All rights reserved.
 //
 
-#import "XRButtonListView.h"
+#import "YFButtonListView.h"
 
 #import "PureLayout.h"
 
@@ -15,11 +14,11 @@
 #define Screen_height [UIScreen mainScreen].bounds.size.height
 #define TAG_BASE 10086
 
-@interface XRButtonListItem ()
+@interface YFButtonListItem ()
 
 @end
 
-@implementation XRButtonListItem
+@implementation YFButtonListItem
 {
     UILabel *_label;
     
@@ -209,13 +208,13 @@
 @end
 
 /* ===================================== 类之界线 ============================================== */
-@interface XRButtonListView ()
+@interface YFButtonListView ()
 
 @property (nonatomic, strong) NSArray *itemsArray;
 
 @end
 
-@implementation XRButtonListView
+@implementation YFButtonListView
 {
     NSMutableArray *_dataArray;
 }
@@ -241,7 +240,7 @@
     return self;
 }
 
-- (void)setDelegate:(id<XRButtonListViewDelegate>)delegate
+- (void)setDelegate:(id<YFButtonListViewDelegate>)delegate
 {
     _delegate = delegate;
     
@@ -254,7 +253,7 @@
     
     for (int i = 0; i < itemCount; i++) {
         
-        XRButtonListItem *item;
+        YFButtonListItem *item;
         
         if (_delegate && [_delegate respondsToSelector:@selector(buttonListView:itemForIndex:)]) {
             
@@ -290,11 +289,11 @@
 
 - (void)buttonListViewClicked:(UIGestureRecognizer *)gesture
 {
-    XRButtonListItem *item = (XRButtonListItem *)gesture.view;
+    YFButtonListItem *item = (YFButtonListItem *)gesture.view;
     
     if (!_isMultipleSelect) {
         
-        for (XRButtonListItem *otherItem in _itemsArray) {
+        for (YFButtonListItem *otherItem in _itemsArray) {
             
             if ([otherItem isEqual:item]) {
                 
@@ -385,7 +384,7 @@
         
         CGFloat y = _edgeInsets.top + (_itemHeight + _linePadding) * line;
         
-        XRButtonListItem *item = [_itemsArray objectAtIndex:i];
+        YFButtonListItem *item = [_itemsArray objectAtIndex:i];
         
         item.frame = CGRectMake(x, y, _itemWidth, _itemHeight);
     }

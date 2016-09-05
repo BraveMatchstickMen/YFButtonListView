@@ -15,7 +15,7 @@
 		E99671AD1D60C8C200959F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99671AB1D60C8C200959F6F /* LaunchScreen.storyboard */; };
 		E99671B81D60C8C200959F6F /* YFButtonListViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99671B71D60C8C200959F6F /* YFButtonListViewTests.m */; };
 		E99671C31D60C8C200959F6F /* YFButtonListViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99671C21D60C8C200959F6F /* YFButtonListViewUITests.m */; };
-		E99671D21D60C8FF00959F6F /* XRButtonListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99671D11D60C8FF00959F6F /* XRButtonListView.m */; };
+		E99671D21D60C8FF00959F6F /* YFButtonListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99671D11D60C8FF00959F6F /* YFButtonListView.m */; };
 		E99671DD1D60C9AC00959F6F /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E99671D51D60C9AC00959F6F /* ALView+PureLayout.m */; };
 		E99671DE1D60C9AC00959F6F /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E99671D71D60C9AC00959F6F /* NSArray+PureLayout.m */; };
 		E99671DF1D60C9AC00959F6F /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E99671D91D60C9AC00959F6F /* NSLayoutConstraint+PureLayout.m */; };
@@ -55,8 +55,8 @@
 		E99671BE1D60C8C200959F6F /* YFButtonListViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFButtonListViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99671C21D60C8C200959F6F /* YFButtonListViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFButtonListViewUITests.m; sourceTree = "<group>"; };
 		E99671C41D60C8C200959F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E99671D01D60C8FF00959F6F /* XRButtonListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRButtonListView.h; sourceTree = "<group>"; };
-		E99671D11D60C8FF00959F6F /* XRButtonListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRButtonListView.m; sourceTree = "<group>"; };
+		E99671D01D60C8FF00959F6F /* YFButtonListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFButtonListView.h; sourceTree = "<group>"; };
+		E99671D11D60C8FF00959F6F /* YFButtonListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFButtonListView.m; sourceTree = "<group>"; };
 		E99671D41D60C9AC00959F6F /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
 		E99671D51D60C9AC00959F6F /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
 		E99671D61D60C9AC00959F6F /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 				E99671A11D60C8C200959F6F /* AppDelegate.m */,
 				E99671A31D60C8C200959F6F /* ViewController.h */,
 				E99671A41D60C8C200959F6F /* ViewController.m */,
-				E99671D01D60C8FF00959F6F /* XRButtonListView.h */,
-				E99671D11D60C8FF00959F6F /* XRButtonListView.m */,
+				E99671D01D60C8FF00959F6F /* YFButtonListView.h */,
+				E99671D11D60C8FF00959F6F /* YFButtonListView.m */,
 				E99671D31D60C9AC00959F6F /* PureLayout */,
 				E99671A61D60C8C200959F6F /* Main.storyboard */,
 				E99671A91D60C8C200959F6F /* Assets.xcassets */,
@@ -307,7 +307,7 @@
 				E99671DF1D60C9AC00959F6F /* NSLayoutConstraint+PureLayout.m in Sources */,
 				E99671A51D60C8C200959F6F /* ViewController.m in Sources */,
 				E99671A21D60C8C200959F6F /* AppDelegate.m in Sources */,
-				E99671D21D60C8FF00959F6F /* XRButtonListView.m in Sources */,
+				E99671D21D60C8FF00959F6F /* YFButtonListView.m in Sources */,
 				E99671DD1D60C9AC00959F6F /* ALView+PureLayout.m in Sources */,
 				E99671DE1D60C9AC00959F6F /* NSArray+PureLayout.m in Sources */,
 				E996719F1D60C8C200959F6F /* main.m in Sources */,
@@ -536,6 +536,7 @@
 				E99671C91D60C8C200959F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E99671CA1D60C8C200959F6F /* Build configuration list for PBXNativeTarget "YFButtonListViewTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +545,7 @@
 				E99671CC1D60C8C200959F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E99671CD1D60C8C200959F6F /* Build configuration list for PBXNativeTarget "YFButtonListViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +554,7 @@
 				E99671CF1D60C8C200959F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
